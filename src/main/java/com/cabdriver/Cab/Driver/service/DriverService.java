@@ -15,5 +15,9 @@ public class DriverService {
 
          driverRepository.save(driver);
     }
+
+    public Driver getDriverByEmail(String emailID){
+       return driverRepository.findByEmailID(emailID);
+    }
 }
 
